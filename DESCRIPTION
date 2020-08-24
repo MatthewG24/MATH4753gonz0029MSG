@@ -1,0 +1,11 @@
+Package: MATH4753gonz0029MSG
+Type: Package
+Title: Intro Package
+Version: 0.1.0
+Author: Matthew Gonzales
+Maintainer: Matthew Gonzales <matthew.s.gonzales-1@ou.edu>
+Description: test package
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
