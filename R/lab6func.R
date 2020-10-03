@@ -11,6 +11,7 @@
 #' myncurve(x=2,mu=5,sigma=1)
 myncurve=func(x,mu,sigma){
   curve(dnorm(x,mean=mu,sd=sigma),xlim=c(mu-3*sigma,mu+3*sigma))
+
   xcurve=seq(-1000,x,length=1000)
   ycurve=dnorm(xcurve,mean=mu,sd=sigma)
   polygon(c(-1000,xcurve,x),c(0,ycurve,0),col="Red")
@@ -18,3 +19,5 @@ myncurve=func(x,mu,sigma){
   prob=round(prob,4)
   prob
 }
+
+
