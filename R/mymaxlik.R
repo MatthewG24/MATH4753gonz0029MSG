@@ -9,6 +9,9 @@
 #' @export
 #'
 #' @examples
+#' logbin=function(x,param)log(dbinom(x,prob=param,size=20))
+#' mymaxlik(lfun=logbin,x=y,param=seq(0,1,length=1000),main="Binomial with size=20")
+
 mymaxlik=function(lfun,x,param,...){
   # how many param values are there?
   np=length(param)
