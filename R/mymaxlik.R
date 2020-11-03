@@ -11,7 +11,6 @@
 #' @examples
 #' logbin=function(x,param)log(dbinom(x,prob=param,size=20))
 #' mymaxlik(lfun=logbin,x=y,param=seq(0,1,length=1000),main="Binomial with size=20")
-
 mymaxlik=function(lfun,x,param,...){
   # how many param values are there?
   np=length(param)
@@ -38,3 +37,10 @@ mymaxlik=function(lfun,x,param,...){
   ifelse(i-3>=1 & i+2<=np, slope<-(y[(i-2):(i+2)]-y[(i-3):(i+1)])/(param[(i-2):(i+2)]-param[(i-3):(i+1)]),slope<-"NA")
   return(list(i=i,parami=param[i],yi=y[i],slope=slope))
 }
+
+tryCatch({
+  library(knitr)
+}, error = function(e) {
+  install.packages("knitr")
+  library(knitr)
+})
