@@ -1,11 +1,11 @@
 #' @title mymaxlik
 #'
-#' @param lfun
-#' @param x
-#' @param param
-#' @param ...
+#' @param lfun it yes
+#' @param x pls work
+#' @param param oh u bet
+#' @param ... do it
 #'
-#' @return
+#' @return it does the thing
 #' @export
 #'
 #' @examples
