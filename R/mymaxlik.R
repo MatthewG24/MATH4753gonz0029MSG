@@ -38,9 +38,4 @@ mymaxlik=function(lfun,x,param,...){
   return(list(i=i,parami=param[i],yi=y[i],slope=slope))
 }
 
-tryCatch({
-  library(knitr)
-}, error = function(e) {
-  install.packages("knitr")
-  library(knitr)
-})
+
